@@ -1,19 +1,17 @@
 # The static keyword in C#
         
 <p align="justify">
-            The static keyword declares members (attributes, methods) that are associated with the class rather than the instances of the class.
-        </p>
-        <p align="justify">
+The static keyword declares members (attributes, methods) that are associated with the class rather than the instances of the class.
+</p>
+<p align="justify">
             Sometimes it is desirable to have a variable that is shared among all instances of a class. For example, you could use this variable as the basis for communication between instances or to keep track of the number of instances that have been created.
-        </p>
-        <p align="justify">
+</p>
+<p align="justify">
             You achieve this shared effect by making the variable with the keyword static. Such a variable is sometimes called a class variable to distinguish it from a member of instance variable, which is not shared.
-        </p>
-        <div><b>Fig1. UML Object Diagram showing the Client class and two unique instances.</b></div><br>
-        <div>
-<a href="http://destyy.com/wy62II" target="_blank">
-<IMG src="picture_library/statickeyword/staticClientDiagram.png">
-</a>
+</p>
+<div><b>Fig1. UML Object Diagram showing the Client class and two unique instances.</b></div><br>
+<div>
+<IMG src="images/staticClientDiagram.png">
 </div><br>
         <p align="justify">
         In this example, every object that is created is assigned a unique serial number, starting at 1 and counting upwards. The variable counter is shared among all instances, so when the constructor of one object increments counter, the next object to be created receives the incremented value.
@@ -26,7 +24,7 @@
         <p align="justify">Sometimes you need to access program code when you do not have an instance of a particular object available. A method that is marked using the keyword <b>static</b> can be used in this way and is sometimes called a class method.</p>
         <div><b>Fig 2. Output of the program is.</b></div><br>
         <div>
-<IMG src="picture_library/statickeyword/Output1.png" width="710">
+<IMG src="images/Output1.png" width="710">
 </div><br>
         <p align="justify">
         You should access methods that are <b>static</b> using the class name rather than an object reference.
@@ -36,7 +34,7 @@
         </p>
         <div><b>Fig 3. Output for the complete example</b></div><br>
         <div>
-<IMG src="picture_library/statickeyword/Output2.png" width="710">
+<IMG src="images/Output2.png" width="710">
 </div><br>
         <p align="justify">
             You should be aware of the following when using static methods:
